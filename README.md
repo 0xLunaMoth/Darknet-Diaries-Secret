@@ -62,7 +62,7 @@ Afterwards it was said
 
 # Darknet Diaries Website
 
-# /secret
+## /secret
 darknetdiaries.com/secret contains an image of the answer arranged on chessboards.
 The image was titled 0x000000.jpg
 
@@ -73,11 +73,11 @@ opening it with a hexeditor reveals the last portion of the file containing a st
 
 `Your move 2bd87cf22c40d4aa65a2e747ab8988a4`
 
-# MD5 hash
+## MD5 hash
 
 The string is an MD5 hash that resolves to the word `chessmaster`
 
-# /chessmaster
+## /chessmaster
 
 Visiting darknetdiaries.com/chessmaster reveals the following line of text:
 `Hmm. Not gonna lie. You could use some practice. Rather than repeating your mistakes, you should develop your game a bit. Your move.`
@@ -88,7 +88,7 @@ Upon inspecting the source of the page, there's an additional line of text:
 
 Which prompts me to look at the robots.txt section of the site. 
 
-# robots.txt
+## robots.txt
 ```
 User-agent: *
 Disallow: /js/
@@ -101,7 +101,7 @@ Sitemap: https://darknetdiaries.com/sitemap.xml
 The robots.txt includes a weird line with a hex value. 
 `0x784251` 
 
-# /0x784251
+## /0x784251
 `One game. I'll even let you have the first move. A game to end all games between us. We play, and the winner takes all.`
 
 This page reveals this text accompanied by an input box. 
@@ -114,7 +114,7 @@ Seems to be the answer to get the next clue.
 Upon entering this in the input field, an alert pops up with the following:
 `/us`
 
-# /us
+## /us
 `This game you are agreeing to is dangerous, my friend.
 You are agreeing to destroy a part of yourself, win or lose, so yes, this matters a great deal, actually.
 For better or worse, this game is a part of you that makes you you.
@@ -127,9 +127,9 @@ Testing it in a JS sandbox and moving the code out of the function and changing 
 
 Inputting the following line in the input field gives an alert with the next clue, `/annihilation`
 
-# /annihilation
+## /annihilation
 This page contains a lot of text that looks to be encoded in base64. 
 It turns out to be a jpeg and decoding it reveals a jpg of the text 
 `/existence`
 
-# /existence
+## /existence
