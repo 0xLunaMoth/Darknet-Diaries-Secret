@@ -12,6 +12,8 @@ A1 A2 A3 A4 A5 B1 B3 B5 C1 C5
 A5 B1 B2 B3 B4 B5 C5
 ```
 
+Plotting these into a chess-like grid reveals the line `/secret`
+
 ## EP1
 Said fast at the end of the episode.
 `A1 B2 C3 D4 E5 F6 G7 H8`
@@ -133,3 +135,10 @@ It turns out to be a jpeg and decoding it reveals a jpg of the text
 `/existence`
 
 ## /existence
+This page contains the encoded string: 
+`1MOyoQIABAAAAAAAAAAAAO4FAAABAAAABdUMWs5CCwBCAAAAQgAAAAAfyoiWjOy9HQtvCggARQAANH9OQABABl5SwKgoKKwQyEIAUMX1GjQhG1zU88iAEQOrQocAAAEBCAoBEF2GHiAEfgXVDFpa1AsAQgAAAEIAAADsvR0LbwoAH8qIlowIAEUAADRCBkAAPwacmqwQyELAqCgoxfUAUFzU88gaNCEcgBAQACK9AAABAQgKHiAX8wEQXYYH1QxaI3gMAEIAAABCAAAA7L0dC28KAB`
+
+which is also base64 encoded, and turns out to be a pcap file. 
+
+`base64 --decode existence.txt > existence.pcap`
+
